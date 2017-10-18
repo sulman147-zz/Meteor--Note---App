@@ -47,7 +47,7 @@ export class Login extends React.Component {
 }
 
 Login.propTypes = {
-  loginWithPassword: React.PropTypes.func.isRequired
+  loginWithPassword: PropTypes.func.isRequired
 };
 
 export default createContainer(() => {
