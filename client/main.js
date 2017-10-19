@@ -10,7 +10,9 @@ import '../imports/startup/simple-schema-configration.js';
 // window.browserHistory = browserHistory;
 Tracker.autorun(() => {
   const isAuthenticated = !!Meteor.userId();
-  onAuthChange(isAuthenticated);
+  const currentPagePrivacy = Session.get('currentPagePrivacy');
+  
+  onAuthChange(isAuthenticated, currentPagePrivacy);
 });
 Tracker.autorun(() => {
   const selectedNoteId = Session.get('selectedNoteId');
