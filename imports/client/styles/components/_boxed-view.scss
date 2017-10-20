@@ -1,12 +1,23 @@
 .boxed-view{
-  background-color: $boxed-view-overlay-bg;
+
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   width: 100vw;
 }
+.note-box-view{
+  background-color: $boxed-view-bg;
+  border: 1px solid $boxed-view-boarder-color;
+  padding: 2.4rem;
+  text-align: center;
+   width: 80%;
+   height: $note-box-view-height
+//  height: $page-content-height;
+  //max-width: $site-max-width;
+}
 .boxed-view__box{
+  border: 1px solid $boxed-view-boarder-color;
   background-color: $boxed-view-bg;
   padding: 2.4rem;
   text-align: center;

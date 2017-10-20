@@ -7,8 +7,17 @@
   justify-content: space-between;
   max-width: $site-max-width;
   margin: 0 auto;
+  height: $header-height;
   padding: $space;
 }
 .header__title{
   margin: 0;
+}
+.notes-header__content {
+  display: flex;
+  align-content: center;
+  max-width: 80%;
+  margin: 0 auto;
+  height: $header-height;
+  padding: $space;
 }

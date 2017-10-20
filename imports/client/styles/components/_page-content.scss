@@ -1,5 +1,26 @@
 .page-content{
+  display:flex;
+  height: $page-content-height;
   max-width: $site-max-width;
   margin: 0 auto;
   padding: $space;
+}
+.Note-content{
+  display:flex;
+  height: $note-box-editor-view-height;
+  max-width: $note-box-view-width;
+  margin: 0 auto;
+  padding-left: 4rem;
+  padding-right: 3rem;
+  padding-bottom: 4rem;
+
+}
+.page-content__sidebar {
+width: $page-content-sidebar-width;
+display: flex;
+}
+
+.page-content__main {
+  display: flex;
+width: $page-content-main-width;
 }

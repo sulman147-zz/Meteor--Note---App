@@ -1,11 +1,15 @@
 //colours
-$brand-primary:#5b4681;
+$brand-primary:#33B5FF;
 $grey:#dddddd;
 $light-grey:#f9f9f9;
 $dark-grey:#777777;
+//body
+$body-background-color:#fafafa;
+$body-default-color: #333333;
 // spacing
 $space:1.4rem;
-$site-max-width:50rem;
+$site-max-width:100rem;
+$space-notes:1rem;
 // Font sizes
 $base-font-size:1.4rem;
 $large-font-size:1.8rem;
@@ -13,8 +17,12 @@ $large-font-size:1.8rem;
 $input-border:$grey;
 $input-spacing:1rem;
 // boxed-view
+$note-box-view-width:$site-max-width;
+$note-box-view-height:80%;
+$note-box-editor-view-height:90%;
 $boxed-view-overlay-bg: $grey;
 $boxed-view-bg:white;
+$boxed-view-boarder-color: $grey;
 //Button
 $button-bg: $brand-primary;
 $button-color:white;
@@ -25,11 +33,19 @@ $button-secondary-border-color:$grey;
 //header
 $header-bg:$brand-primary;
 $header-color:white;
+$header-height:6rem;
 
 //item
 $item-bg:$light-grey;
 $item-border: darken($item-bg, 8%);
 $item-text-color:$dark-grey;
+
+$editor-height:cal(20%- #{$note-box-view-height});
+//page-content
+
+$page-content-sidebar-width:70rem;
+$page-content-main-width: cal(#{$note-box-view-width}-#{$page-content-sidebar-width});
+$page-content-height: cal(100vh- #{$header-height});
 
 //imeages
 $path:"../../../public/images/Controll & uncntrol input.png";

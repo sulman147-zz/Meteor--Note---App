@@ -13,3 +13,13 @@
   text-align: center;
   margin: 0;
 }
+.item-list {
+  background-color: white;
+  border: 1px solid $grey;
+  overflow-y: scroll;
+  text-align: left;
+
+  padding: 5px;
+  width: 20rem;
+  height: 100%;
+}
